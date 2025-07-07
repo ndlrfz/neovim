@@ -1,0 +1,27 @@
+return {
+	"thesimonho/kanagawa-paper.nvim",
+	lazy = false,
+	-- enabled = false,
+	priority = 1000,
+	init = function()
+		vim.cmd.colorscheme("kanagawa-paper-ink")
+	end,
+	config = function()
+		require("kanagawa-paper").setup({
+			undercurl = true,
+			transparent = false,
+			gutter = true,
+			dimInactive = false, -- disabled when transparent
+			terminalColors = true,
+			commentStyle = { italic = true },
+			functionStyle = { bold = false },
+			keywordStyle = { italic = false, bold = false },
+			statementStyle = { italic = false, bold = false },
+			typeStyle = { italic = true },
+			colors = { theme = {}, palette = {} }, -- override default palette and theme colors
+			overrides = function() -- override highlight groups
+				return {}
+			end,
+		})
+	end,
+}
