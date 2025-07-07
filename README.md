@@ -1,4 +1,12 @@
-# Packages
+## Usage
+* Python
+* Javascript
+* Django
+* React
+* Tailwind
+* Markdown
+
+## Packages
 
 [x] lazy.nvim
 [x] cyberdream
